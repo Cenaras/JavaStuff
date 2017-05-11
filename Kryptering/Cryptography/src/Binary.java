@@ -15,6 +15,8 @@ public class Binary {
 
 
 
+        //Add so the entered string gets converted into binary and then XOR it with the key
+
         return binaryKey;
     }
 
