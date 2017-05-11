@@ -8,7 +8,7 @@ class main {
 
         while (true) {
 
-            System.out.println("Choose which type of encryption you want: \n 1. Caesar \n 2. Name ");
+            System.out.println("Choose which type of encryption you want: \n 1. Caesar \n 2. Binary ");
             switch (myScanner.nextInt()) {
                 case 1:
                     System.out.println("Enter the desired text as a string:");
