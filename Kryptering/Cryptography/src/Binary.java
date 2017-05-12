@@ -3,6 +3,16 @@ public class Binary {
     Scanner myScanner = new Scanner(System.in);
     String text() {
 
+
+        return "test";
+
+    }
+
+}
+
+/*
+        //System.out.println(ctb.toBinary("test"));
+
         String myMessage = myScanner.nextLine();
         System.out.println("Enter an integer (between 0 and 255) to use as the encryption key");
         int myKey = myScanner.nextInt();
@@ -25,6 +35,4 @@ public class Binary {
         //Add so the entered string gets converted into binary and then XOR it with the key
 
         return binaryKey;
-    }
-
-}
+ */

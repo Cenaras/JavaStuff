@@ -4,6 +4,7 @@ class main {
         //Declarations of classes
         Caesar caesar = new Caesar();
         Binary binary = new Binary();
+        ConvertToBinary ctb = new ConvertToBinary();
         Scanner myScanner = new Scanner(System.in);
 
         while (true) {
@@ -16,7 +17,8 @@ class main {
                     break;
                 case 2:
                     System.out.println("Enter the desired text as a string:");
-                    System.out.println(binary.text());
+
+
                     break;
                 default:
                     System.out.println("No such option");
