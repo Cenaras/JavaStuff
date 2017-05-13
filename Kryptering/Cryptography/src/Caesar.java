@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Caesar {
+
     Scanner myScanner = new Scanner(System.in);
     String text() {
         String myMessage = myScanner.nextLine();

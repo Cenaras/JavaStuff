@@ -1,6 +1,7 @@
 
 public class ConvertToBinary {
-    public static String toBinary(String str) {
+
+    public static String stringToBinary(String str) {
         String result = "";
         String tmpStr;
         int tmpInt;
@@ -29,9 +30,19 @@ public class ConvertToBinary {
         return result;
     }
 
-    int toBinary(int number) {
-        return 5;
-    }
+    String numberToBinary(double number) {
+        String result = "";
 
+        for (int i = 7; i>=0; i--) {
+            if (number >= Math.pow(2, i)) {
+                result+="1";
+                number -= Math.pow(2, i);
+            } else {
+                result+="0";
+            }
+        }
+
+        return result;
+    }
 
 }
