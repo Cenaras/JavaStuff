@@ -1,7 +1,12 @@
 import java.util.Scanner;
+
 public class Binary {
+
+    ConvertToBinary ctb = new ConvertToBinary();
+
     Scanner myScanner = new Scanner(System.in);
     String text() {
+        int charCount = 0;
         String myMessage = myScanner.nextLine();
         System.out.println("Enter an integer (between 0 and 255) to use as the encryption key");
 
@@ -11,11 +16,25 @@ public class Binary {
             myKey = myScanner.nextInt();
         }
 
-        return "test";
+        String binaryMessage = ctb.stringToBinary(myMessage);
+        ctb.numberToBinary(myKey);
+
+        for (int i = 0; i<binaryMessage.length(); i++) {
+            if (binaryMessage.charAt(i) == ' ') {
+                charCount++;
+            }
+        }
+
+
+        return binaryMessage;
 
     }
 
 }
+
+
+
+
 
 /*
         //System.out.println(ctb.toBinary("test"));

@@ -9,6 +9,11 @@ public class Caesar {
         System.out.println("Enter an integer to use as the encryption key");
         int myKey = myScanner.nextInt();
 
+        while(myKey == 32) {
+            System.out.println("This key is unstable and will likely cause the program to crash - please choose another one");
+            myKey = myScanner.nextInt();
+        }
+
         char[] message = myMessage.toCharArray();
         int[] numberEncryptedMessage = new int[message.length];
         char[] encryptedMessage = new char[numberEncryptedMessage.length];
