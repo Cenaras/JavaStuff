@@ -41,7 +41,6 @@ public class ConvertToBinary {
                 result+="0";
             }
         }
-
         return result;
     }
 
